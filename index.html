@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Clash Royale Upgrade Calculator 2025 | Gold & Card Costs</title>
+    <title>Clash Royale Upgrade Calculator 2025 | Gold & Card Costs Strategy Guide</title>
     <meta name="description"
-        content="Calculate Gold and Card costs for Clash Royale upgrades from Level 1 to 16. Updated with accurate 2025 economy data.">
+        content="Calculate Gold and Card costs for Clash Royale upgrades to Level 16. Plus, the ultimate 2025 guide to farming gold, Elite Wild Cards, and deck management.">
     <meta name="keywords"
-        content="Clash Royale calculator, Level 16 upgrade cost, Clash Royale gold calculator, card upgrade stats, CR 2025 update">
+        content="Clash Royale calculator, Level 16 upgrade cost, Clash Royale gold calculator, Elite Wild Cards guide, CR 2025 economy, how to get gold fast clash royale">
     <meta name="author" content="CRCalc">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kausal-dev.github.io/clash-calculator/">
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="apple-touch-icon" href="assets/preview.png">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kausal-dev.github.io/clash-calculator/">
-    <meta property="og:title" content="Clash Royale Upgrade Calculator 2025">
-    <meta property="og:description"
-        content="Calculate Gold and Card costs for Clash Royale upgrades from Level 1 to 16.">
+    <meta property="og:title" content="Clash Royale Upgrade Calculator & Strategy Guide">
+    <meta property="og:description" content="Calculate costs and learn how to max your deck fast in 2025.">
     <meta property="og:image" content="https://kausal-dev.github.io/clash-calculator/assets/preview.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Clash Royale Upgrade Calculator">
-    <meta name="twitter:description"
-        content="Calculate Gold and Card costs for Clash Royale upgrades from Level 1 to 16.">
+    <meta name="twitter:description" content="Calculate costs and learn how to max your deck fast in 2025.">
     <meta name="twitter:image" content="https://kausal-dev.github.io/clash-calculator/assets/preview.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -39,12 +38,15 @@
             --wood-dark: #6F3F1F;
             --wood-light: #945B32;
             --accent-gold: #FFD700;
-            --glass-bg: rgba(0, 0, 0, 0.75);
+            --glass-bg: rgba(0, 0, 0, 0.85);
+            /* Slightly darker for readability */
         }
 
         * {
             box-sizing: border-box;
             -webkit-tap-highlight-color: transparent;
+            scroll-behavior: smooth;
+            /* Enables smooth scrolling for internal links */
         }
 
         body {
@@ -79,7 +81,7 @@
             max-width: 480px;
             animation: bounceIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             z-index: 10;
         }
 
@@ -273,9 +275,7 @@
         .info-container {
             width: 100%;
             max-width: 800px;
-            /* Dark semi-transparent background */
             background-color: var(--glass-bg);
-            /* Blur effect behind the element */
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border-radius: 20px;
@@ -289,13 +289,11 @@
 
         .info-section {
             margin-bottom: 40px;
-            /* Animation Setup */
             opacity: 0;
             transform: translateY(30px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
 
-        /* Class added by JS to trigger animation */
         .info-section.visible {
             opacity: 1;
             transform: translateY(0);
@@ -317,10 +315,20 @@
         .info-container h2 {
             font-family: 'Luckiest Guy', cursive;
             font-size: 1.8rem;
+            margin-top: 10px;
             margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
             text-shadow: 2px 2px 0 #000;
+        }
+
+        .info-container h3 {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 5px;
         }
 
         /* Heading Colors */
@@ -348,6 +356,67 @@
             font-weight: 700;
         }
 
+        /* Table of Contents - Pill Grid */
+        .toc {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            border: none;
+            font-size: 1.2rem;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .toc li {
+            flex-grow: 1;
+            min-width: 140px;
+            max-width: 220px;
+        }
+
+        .toc li a {
+            display: block;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 12px 15px;
+            border-radius: 50px;
+            text-align: center;
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .toc li a:hover {
+            background: var(--primary-blue);
+            transform: translateY(-3px) scale(1.05);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 15px rgba(62, 139, 255, 0.4);
+            text-decoration: none;
+        }
+
         /* Feature List Styling */
         .feature-list {
             list-style: none;
@@ -355,12 +424,32 @@
         }
 
         .feature-list li {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             margin-bottom: 10px;
             padding: 12px 15px;
             border-radius: 8px;
             border-left: 4px solid var(--primary-blue);
             font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+            font-family: 'Rubik', sans-serif;
+            padding-bottom: 20px;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: white;
         }
 
         /* --- Mobile Specific Adjustments --- */
@@ -392,8 +481,9 @@
                 font-size: 1.5rem;
             }
 
-            .info-container p {
-                font-size: 1rem;
+            .toc ul {
+                flex-direction: column;
+                gap: 8px;
             }
         }
     </style>
@@ -450,59 +540,119 @@
 
     <div class="info-container">
 
-        <div class="info-section">
+        <nav class="toc">
+            <h3>Quick Navigation</h3>
+            <ul>
+                <li><a href="#intro">About the Calculator</a></li>
+                <li><a href="#gold-strategy">Gold Farming Guide</a></li>
+                <li><a href="#elite-levels">Elite Levels (Lvl 15/16)</a></li>
+                <li><a href="#mastery">Card Mastery</a></li>
+                <li><a href="#pro-tips">Pro Tips</a></li>
+            </ul>
+        </nav>
+
+        <div id="intro" class="info-section">
             <span class="info-badge">UPDATED FOR 2025</span>
-            <h2 class="h-gold">🚀 Master Your Deck</h2>
+            <h2 class="h-gold">🚀 Ultimate Upgrade Strategy</h2>
             <p>
-                Ready to dominate the arena? The <strong>Clash Royale Upgrade Calculator 2025</strong> is your ultimate
-                tool for planning your path to victory. Whether you are pushing to <strong>Elite Level 16</strong> or
-                just trying to max out your favorite win condition, knowing your costs is half the battle. This tool
-                provides precise <strong>Gold and Card requirements</strong> instantly, so you never have to guess
-                again.
+                Welcome to the definitive <strong>Clash Royale Upgrade Calculator 2025</strong>. If you are serious
+                about climbing the Trophy Road or dominating the Path of Legends, resource management is your most
+                critical skill. The game economy has evolved significantly with the introduction of <strong>Elite Wild
+                    Cards</strong> and Level 15 (and beyond).
+            </p>
+            <p>
+                This tool doesn't just calculate numbers; it helps you visualize the massive investment required to max
+                out a deck. Whether you are a free-to-play (F2P) player or a Pass Royale subscriber, knowing the exact
+                <strong>Gold and Card costs</strong> is the first step to building a Top Ladder deck.
             </p>
         </div>
 
-        <div class="info-section">
-            <h2 class="h-blue">🛡️ Smart Resource Management</h2>
+        <div id="gold-strategy" class="info-section">
+            <h2 class="h-blue">💰 How to Farm Gold Fast in 2025</h2>
             <p>
-                In Clash Royale, Gold and Wild Cards are precious resources. Don't waste them on the wrong upgrades! By
-                using this <strong>Clash Royale gold calculator</strong>, you can strategize efficiently.
+                Gold is the bottleneck for almost every player. Even if you have the cards, you likely lack the millions
+                of gold needed to upgrade them. Here is how to maximize your income using our calculator data:
+            </p>
+            <h3>1. Clan Wars are Mandatory</h3>
+            <p>
+                It might feel like a chore, but <strong>Clan Wars 2.0</strong> is the single highest source of
+                guaranteed gold. Even if you lose every battle, you earn gold. Winning a Duel yields thousands of gold
+                daily. Always use all 4 decks every day.
+            </p>
+            <h3>2. Donate, Donate, Donate!</h3>
+            <p>
+                Many players hoard cards. This is a mistake. Unless you are actively upgrading a specific card,
+                <strong>donate everything</strong>. The gold you receive from donations is often more valuable than the
+                card stack itself, and it generates Experience (XP) to level up your King Tower.
+            </p>
+            <h3>3. The "Max Stack" Method</h3>
+            <p>
+                Once a card reaches level 14 (or you have enough cards to upgrade it), every extra copy you pull from a
+                chest is automatically converted into Gold (and sometimes Elite Wild Cards). Focus on requesting
+                <strong>Common</strong> cards in your clan until they are maxed. This turns every Common Chest into a
+                gold crate.
+            </p>
+        </div>
+
+        <div id="elite-levels" class="info-section">
+            <h2 class="h-purple">🔥 Elite Levels & Wild Cards</h2>
+            <p>
+                The jump from Level 14 to Level 15 (Elite) works differently than previous levels. You no longer use
+                Gold. Instead, you need <strong>Elite Wild Cards (EWC)</strong>.
             </p>
             <ul class="feature-list">
-                <li><strong>Plan Ahead:</strong> Know exactly how much gold you need to save for Slash Royale events.
-                </li>
-                <li><strong>Clan Requests:</strong> Calculate how many days of requests it takes to max a Rare or Epic
-                    card.</li>
-                <li><strong>Shop Offers:</strong> Determine if that shop offer is actually worth the gems.</li>
+                <li><strong>The Cost:</strong> It takes exactly <strong>50,000 Elite Wild Cards</strong> to upgrade one
+                    card to Elite Level.</li>
+                <li><strong>Conversion Rates:</strong> When you have a Level 14 card, extra copies convert to EWC.
+                    Commons give 1, Rares give 5, Epics give 20, and Legendaries give 1,500.</li>
+                <li><strong>Champion Value:</strong> Pulling a Champion when you are already maxed gives a massive 500
+                    EWC bonus.</li>
+            </ul>
+            <p>
+                <em>Note: Our calculator handles the Gold requirements up to Level 14, which is the prerequisite before
+                    you can start grinding for Elite levels.</em>
+            </p>
+        </div>
+
+        <div id="mastery" class="info-section">
+            <h2 class="h-gold">🎓 Card Mastery: Hidden Gems</h2>
+            <p>
+                Don't ignore the "Badge" icon on your cards. <strong>Card Mastery</strong> tasks are the best way to
+                earn Gems and Wild Cards without spending money.
+            </p>
+            <p>
+                Every card has specific tasks (e.g., "Deal Damage," "Take Damage," "Spawn Units"). Completing the second
+                tier of Mastery often rewards you with Gems. Completing the third tier gives significant stacks of cards
+                or Gold. If you are short on resources, check your collection for cards that are close to completing a
+                Mastery task and grind them in 1v1 Showdown or Party modes.
+            </p>
+        </div>
+
+        <div id="pro-tips" class="info-section">
+            <h2 class="h-blue">⚔️ Pro Upgrading Tips</h2>
+            <p>
+                Stop upgrading random cards! To progress in Clash Royale, you need a focused strategy.
+            </p>
+            <ul class="feature-list">
+                <li><strong>One Deck Rule:</strong> Pick ONE meta deck (e.g., Log Bait, Hog Cycle, Golem Beatdown) and
+                    only upgrade those 8 cards until they are maxed. A maxed-out bad deck beats a Level 11 meta deck
+                    every time.</li>
+                <li><strong>Win Condition First:</strong> Always upgrade your Win Condition (Hog Rider, Balloon, Miner)
+                    first. If your Win Condition is underleveled, it won't deal enough damage to towers.</li>
+                <li><strong>Spell Interactions:</strong> Upgrade spells (Log, Fireball, Zap) second. A Level 13 Zap
+                    cannot kill a Level 14 Goblin Barrel, which will lose you the game instantly. Interaction variations
+                    are the biggest reason to use this calculator.</li>
             </ul>
         </div>
 
-        <div class="info-section">
-            <h2 class="h-purple">🔮 Understanding Card Rarities</h2>
-            <p>
-                Not all cards are created equal. The cost to upgrade a <strong>Champion</strong> is significantly higher
-                than a <strong>Common</strong> card.
-            </p>
-            <p>
-                <strong>Common Cards:</strong> The backbone of your deck. Cheap to upgrade early on, but require
-                thousands of cards for elite levels.
-                <br><br>
-                <strong>Legendary & Champions:</strong> Hardest to find. Upgrading these requires careful planning and
-                often the use of Magic Books to bypass the steep card requirements found at Level 13 and 14.
-            </p>
-        </div>
-
-        <div class="info-section">
-            <h2 class="h-gold">📈 2025 Economy & Elite Levels</h2>
-            <p>
-                The game economy changes frequently. We keep our data updated with the latest <strong>CR 2025 economy
-                    stats</strong>. This includes the massive costs associated with the new Level 15 and Level 16
-                (Elite) updates. Stop doing the math in your head—let our calculator handle the numbers while you focus
-                on your placement and timing in the arena.
-            </p>
-        </div>
-
     </div>
+
+    <footer>
+        <a href="#intro">Home</a> •
+        <a href="#gold-strategy">Guide</a> •
+        <a href="https://github.com/kausal-dev/clash-calculator">GitHub Repo</a> •
+        <span>© 2025 CRCalc</span>
+    </footer>
 
     <script>
         // --- 1. SCROLL ANIMATION OBSERVER ---
@@ -510,14 +660,14 @@
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.1 // Trigger when 10% of the element is visible
+                threshold: 0.1
             };
 
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // Only animate once
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
@@ -527,7 +677,6 @@
                 observer.observe(section);
             });
         });
-
 
         // --- 2. CALCULATOR LOGIC ---
         const upgradeData = {
@@ -580,7 +729,6 @@
             targetSelect.value = MAX_LEVEL;
         }
 
-        // ANIMATION HELPER
         function animateValue(obj, start, end, duration) {
             let startTimestamp = null;
             const step = (timestamp) => {
@@ -623,20 +771,14 @@
                 }
             }
 
-            // --- UPDATE IMAGES & COLORS ---
             cardImg.src = "assets/" + rarity + "_cards.png";
             cardsContainer.className = 'result-value';
-
-            // Remove old color classes
             cardsContainer.classList.remove('text-common', 'text-rare', 'text-epic', 'text-legendary', 'text-champion');
-            // Add new color class
             cardsContainer.classList.add('text-' + rarity);
 
-            // Reset animation by hiding and showing
             resultDiv.style.display = 'none';
             setTimeout(() => {
                 resultDiv.style.display = 'block';
-                // --- TRIGGER NUMBER ANIMATION ---
                 animateValue(goldSpan, 0, totalGold, 1000);
                 animateValue(cardsSpan, 0, totalCards, 1000);
             }, 10);
