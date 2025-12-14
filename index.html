@@ -4,7 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clash Royale Upgrade Calculator</title>
+
+    <title>Clash Royale Upgrade Calculator (2025 Updated)</title>
+    <meta name="description"
+        content="Calculate Gold and Cards needed for Level 16 upgrades in Clash Royale. Updated for 2025 economy. Accurate, free, and fan-made tool.">
+    <meta name="keywords"
+        content="Clash Royale, Level 16 Calculator, CR Upgrade Cost, Elite Levels, Clash Royale 2025, Gold Calculator, Card Upgrade">
+    <meta name="author" content="CR Fan">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta property="og:title" content="Clash Royale Upgrade Calculator">
+    <meta property="og:description"
+        content="Plan your upgrades to Level 16! Calculate Gold and Cards instantly with accurate 2025 costs.">
+    <meta property="og:image" content="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/assets/preview.png">
+    <meta property="og:url" content="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/">
+    <meta property="og:type" content="website">
+
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 
     <style>
@@ -18,7 +34,6 @@
         body {
             font-family: 'Luckiest Guy', cursive;
             background-image: url('assets/image.png');
-            /* Ensure this file exists */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -300,18 +315,14 @@
             targetSelect.value = MAX_LEVEL;
         }
 
-        // ANIMATION HELPER: Counts numbers up
+        // ANIMATION HELPER
         function animateValue(obj, start, end, duration) {
             let startTimestamp = null;
             const step = (timestamp) => {
                 if (!startTimestamp) startTimestamp = timestamp;
                 const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-
-                // Linear easing is usually fine for counters, 
-                // but we can just use Math.floor
                 const currentVal = Math.floor(progress * (end - start) + start);
                 obj.innerHTML = currentVal.toLocaleString();
-
                 if (progress < 1) {
                     window.requestAnimationFrame(step);
                 }
@@ -356,7 +367,6 @@
             resultDiv.style.display = 'block';
 
             // --- TRIGGER ANIMATION ---
-            // Run count-up animation for 1000ms (1 second)
             animateValue(goldSpan, 0, totalGold, 1000);
             animateValue(cardsSpan, 0, totalCards, 1000);
         }
