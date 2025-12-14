@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kausal-dev.me/clash-calculator/sitemap.xml
