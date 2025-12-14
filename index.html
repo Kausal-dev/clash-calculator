@@ -8,11 +8,9 @@
     <title>Clash Royale Upgrade Calculator 2025 | Gold & Card Costs</title>
     <meta name="description"
         content="Calculate Gold and Card costs for Clash Royale upgrades to Level 16. Plus, the ultimate 2025 guide to farming gold, Elite Wild Cards, and deck management.">
-    <meta name="keywords"
-        content="Clash Royale calculator, Level 16 upgrade cost, Clash Royale gold calculator, Elite Wild Cards guide, CR 2025 economy, how to get gold fast clash royale">
     <meta name="author" content="CRCalc">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kausal-dev.github.io/clash-calculator/">
+    <link rel="canonical" href="https://kausaldev.me/clash-calculator/">
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="apple-touch-icon" href="assets/preview.png">
@@ -24,9 +22,6 @@
     <meta property="og:image" content="https://kausal-dev.github.io/clash-calculator/assets/preview.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Clash Royale Upgrade Calculator">
-    <meta name="twitter:description" content="Calculate costs and learn how to max your deck fast in 2025.">
-    <meta name="twitter:image" content="https://kausal-dev.github.io/clash-calculator/assets/preview.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
@@ -39,14 +34,12 @@
             --wood-light: #945B32;
             --accent-gold: #FFD700;
             --glass-bg: rgba(0, 0, 0, 0.85);
-            /* Slightly darker for readability */
         }
 
         * {
             box-sizing: border-box;
             -webkit-tap-highlight-color: transparent;
             scroll-behavior: smooth;
-            /* Enables smooth scrolling for internal links */
         }
 
         body {
@@ -101,7 +94,6 @@
             }
         }
 
-        /* --- Main Content Area --- */
         .content-area {
             background-color: #F1F4F9;
             border-radius: 16px;
@@ -160,7 +152,6 @@
             border-bottom-width: 2px;
         }
 
-        /* --- Upgrade Button --- */
         button {
             width: 100%;
             padding: 18px;
@@ -202,7 +193,6 @@
             box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
-        /* --- Results --- */
         #result {
             margin-top: 2rem;
             padding: 1.2rem;
@@ -271,7 +261,6 @@
             color: #e6bd00;
         }
 
-        /* --- Dark "Glass" SEO Content Panel --- */
         .info-container {
             width: 100%;
             max-width: 800px;
@@ -331,7 +320,6 @@
             padding-bottom: 5px;
         }
 
-        /* Heading Colors */
         .h-gold {
             color: #F8B000;
         }
@@ -356,7 +344,33 @@
             font-weight: 700;
         }
 
-        /* Table of Contents - Pill Grid */
+        /* --- Internal Links Styling --- */
+        .content-link {
+            color: var(--primary-blue);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--primary-blue);
+            transition: color 0.2s;
+        }
+
+        .content-link:hover {
+            color: var(--accent-gold);
+            border-bottom: 1px solid var(--accent-gold);
+        }
+
+        .back-to-top {
+            display: block;
+            text-align: right;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .back-to-top:hover {
+            color: #fff;
+        }
+
+        /* Table of Contents */
         .toc {
             background-color: rgba(0, 0, 0, 0.3);
             padding: 25px;
@@ -414,10 +428,8 @@
             transform: translateY(-3px) scale(1.05);
             border-color: rgba(255, 255, 255, 0.3);
             box-shadow: 0 8px 15px rgba(62, 139, 255, 0.4);
-            text-decoration: none;
         }
 
-        /* Feature List Styling */
         .feature-list {
             list-style: none;
             padding: 0;
@@ -432,7 +444,6 @@
             font-size: 1rem;
         }
 
-        /* Footer */
         footer {
             margin-top: 20px;
             text-align: center;
@@ -452,7 +463,6 @@
             color: white;
         }
 
-        /* --- Mobile Specific Adjustments --- */
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.8rem;
@@ -492,7 +502,7 @@
 <body>
 
     <div class="game-board">
-        <h1>Upgrade Calculator</h1>
+        <h1>Clash Royale Upgrade Calculator 2025</h1>
 
         <div class="content-area">
 
@@ -557,8 +567,8 @@
             <p>
                 Welcome to the definitive <strong>Clash Royale Upgrade Calculator 2025</strong>. If you are serious
                 about climbing the Trophy Road or dominating the Path of Legends, resource management is your most
-                critical skill. The game economy has evolved significantly with the introduction of <strong>Elite Wild
-                    Cards</strong> and Level 15 (and beyond).
+                critical skill. The game economy has evolved significantly with the introduction of
+                <a href="#elite-levels" class="content-link">Elite Wild Cards</a> and Level 15 (and beyond).
             </p>
             <p>
                 This tool doesn't just calculate numbers; it helps you visualize the massive investment required to max
@@ -588,10 +598,11 @@
             <h3>3. The "Max Stack" Method</h3>
             <p>
                 Once a card reaches level 14 (or you have enough cards to upgrade it), every extra copy you pull from a
-                chest is automatically converted into Gold (and sometimes Elite Wild Cards). Focus on requesting
+                chest is automatically converted into Gold. Focus on requesting
                 <strong>Common</strong> cards in your clan until they are maxed. This turns every Common Chest into a
                 gold crate.
             </p>
+            <a href="#intro" class="back-to-top">^ Back to Top</a>
         </div>
 
         <div id="elite-levels" class="info-section">
@@ -605,13 +616,15 @@
                     card to Elite Level.</li>
                 <li><strong>Conversion Rates:</strong> When you have a Level 14 card, extra copies convert to EWC.
                     Commons give 1, Rares give 5, Epics give 20, and Legendaries give 1,500.</li>
-                <li><strong>Champion Value:</strong> Pulling a Champion when you are already maxed gives a massive 500
+                <li><strong>Champion Value:</strong> Pulling a <a href="#rarity" class="content-link">Champion</a> when
+                    you are already maxed gives a massive 500
                     EWC bonus.</li>
             </ul>
             <p>
                 <em>Note: Our calculator handles the Gold requirements up to Level 14, which is the prerequisite before
                     you can start grinding for Elite levels.</em>
             </p>
+            <a href="#intro" class="back-to-top">^ Back to Top</a>
         </div>
 
         <div id="mastery" class="info-section">
@@ -623,9 +636,9 @@
             <p>
                 Every card has specific tasks (e.g., "Deal Damage," "Take Damage," "Spawn Units"). Completing the second
                 tier of Mastery often rewards you with Gems. Completing the third tier gives significant stacks of cards
-                or Gold. If you are short on resources, check your collection for cards that are close to completing a
-                Mastery task and grind them in 1v1 Showdown or Party modes.
+                or Gold.
             </p>
+            <a href="#intro" class="back-to-top">^ Back to Top</a>
         </div>
 
         <div id="pro-tips" class="info-section">
@@ -640,9 +653,10 @@
                 <li><strong>Win Condition First:</strong> Always upgrade your Win Condition (Hog Rider, Balloon, Miner)
                     first. If your Win Condition is underleveled, it won't deal enough damage to towers.</li>
                 <li><strong>Spell Interactions:</strong> Upgrade spells (Log, Fireball, Zap) second. A Level 13 Zap
-                    cannot kill a Level 14 Goblin Barrel, which will lose you the game instantly. Interaction variations
-                    are the biggest reason to use this calculator.</li>
+                    cannot kill a Level 14 Goblin Barrel, which will lose you the game instantly. See <a
+                        href="#gold-strategy" class="content-link">Gold Guide</a> for funding these upgrades.</li>
             </ul>
+            <a href="#intro" class="back-to-top">^ Back to Top</a>
         </div>
 
     </div>
@@ -650,7 +664,9 @@
     <footer>
         <a href="#intro">Home</a> •
         <a href="#gold-strategy">Guide</a> •
-        <span>© 2025 Clash Calculator</span>
+        <a href="#elite-levels">Elite</a> •
+        <a href="#pro-tips">Tips</a> •
+        <span>© 2025 CRCalc</span>
     </footer>
 
     <script>
