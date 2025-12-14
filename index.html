@@ -17,7 +17,7 @@
 
         body {
             font-family: 'Luckiest Guy', cursive;
-            background-image: url('image.png');
+            background-image: url('assets/image.png');
             /* Ensure this file exists */
             background-size: cover;
             background-position: center;
@@ -234,14 +234,14 @@
                     <span>Gold Cost</span>
                     <span class="result-value" style="color: #F8B000;">
                         <span id="goldResult">0</span>
-                        <img src="coins.png" alt="Gold" class="res-img">
+                        <img src="assets/coins.png" alt="Gold" class="res-img">
                     </span>
                 </div>
                 <div class="result-item">
                     <span>Cards Needed</span>
                     <span class="result-value" id="cardsValueContainer">
                         <span id="cardsResult">0</span>
-                        <img id="cardTypeImage" src="common_cards.png" alt="Cards" class="res-img">
+                        <img id="cardTypeImage" src="assets/common_cards.png" alt="Cards" class="res-img">
                     </span>
                 </div>
             </div>
@@ -348,7 +348,7 @@
             }
 
             // --- UPDATE IMAGES & COLORS ---
-            cardImg.src = rarity + "_cards.png";
+            cardImg.src = "assets/" + rarity + "_cards.png";
             cardsContainer.className = 'result-value';
             cardsContainer.classList.add('text-' + rarity);
 

@@ -15,14 +15,14 @@ A beautiful, web-based calculator designed to help Clash Royale players plan the
 ## 🚀 How to Run Locally
 
 1.  Clone this repository or download the ZIP file.
-2.  Ensure all image assets are in the root folder:
-    * `image.png` (Background)
-    * `coins.png`
-    * `common_cards.png`
-    * `rare_cards.png`
-    * `epic_cards.png`
-    * `legendary_cards.png`
-    * `champion_cards.png`
+2.  Ensure all image assets are in the `assets/` folder:
+    * `assets/image.png` (Background)
+    * `assets/coins.png`
+    * `assets/common_cards.png`
+    * `assets/rare_cards.png`
+    * `assets/epic_cards.png`
+    * `assets/legendary_cards.png`
+    * `assets/champion_cards.png`
 3.  Open `index.html` in any modern web browser.
 
 ## 🛠️ Built With
